@@ -1,6 +1,8 @@
 import torch
 import torch.utils.data
-from torch._six import container_abcs, string_classes, int_classes
+import collections.abc as container_abcs
+string_classes = (str,)
+int_classes = (int,)
 
 import decode.generic
 
